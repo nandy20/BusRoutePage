@@ -1,0 +1,188 @@
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BUS ROUTES</title>
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800" rel="stylesheet">
+  <style>
+    body {
+      margin: 0px;
+      text-align: center;
+      background: white;
+      color: black;
+    }
+
+    .firsec {
+      width: 100%;
+      height: 80px;
+      background: #D7D4F7;
+    }
+
+    .busr {
+      font-size: 25px;
+      position: relative;
+      top: 30%;
+      font-family: Serif;
+    }
+
+    .secndsec{
+	    margin-top:3%;
+	    width:250px;
+		height:250px;
+	}
+    .im {
+      float: left;
+      position: relative;
+      left: 2%;
+      top: 5%;
+    }
+
+    input {
+      margin-top: 2%;
+      margin-left: 32%;
+      float: left;
+      padding: 5px;
+    }
+
+    #ip {
+      border-radius: 18px;
+      border: 2px solid #3a4750;
+      padding: 20px;
+      width: 500px;
+      height: 15px;
+      background-color: #DEDEDE;
+    }
+
+
+    #timeline {
+      list-style: none;
+      width: 50%;
+      height: 50px;
+      margin-top: 20%;
+      margin-left: 25%;
+      border-top: 6px dashed black;
+      display: table;
+      border-spacing: 30px 0;
+    }
+
+    #timeline li {
+      display: table-cell;
+      position: relative;
+      min-width: 100px;
+    }
+	
+    .date{
+      padding-top:30px;
+
+    }
+    .bus {
+      margin: 0 auto;
+      top: -20px;
+      left: 0;
+      right: 0;
+      display: block;
+      position: absolute;
+    }
+    .content {
+      text-align: center;
+      position: relative;
+    }
+    .avatar {
+      width: 90px;
+      height: 70px;
+      display: block;
+      border-radius: 50%;
+      border: 6px solid #3fc1c9;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      line-height: 30px;
+      background: #3fc1c9;
+
+    }
+    .content:before {
+      content: '';
+      width: 50px;
+      height: 100px;
+      left: 50%;
+      margin-left: -2px;
+      position: absolute;
+    }
+    li.up .content {
+      margin-top: -106px;
+    }
+
+    li.up .content:before {
+      border-left: 4px solid #3fc1c9;
+    }
+
+    li.up .date {
+      margin-top: 106px;
+    }
+
+    li.up .avatar {
+      background: #3fc1c9;
+      margin-top: -30px;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  <div class="firsec">
+    <img class="im" src="logo.png" width="70px" height="70px">
+    <p class="busr"><strong>BUS ROUTES</strong></p>
+  </div>
+  <div >
+     <img class="secndsec" src="road.png">
+  </div>
+  <div >
+	  
+      <input id="ip" type="text " placeholder="Enter bus no or location">
+  </div>
+  <ul id='timeline'>
+    <li class='event up'>
+      <div class='content'>
+        <div class="avatar">Ambattur Estate</div>
+      </div>
+
+      <div class="dot">
+
+        <img class="bus" src="bus.png" alt="bus-img">
+      </div>
+      <div class='date'>6.00am</div>
+    </li>
+    <li class='event up'>
+      <div class='content'>
+        <div class="avatar">Wavin</div>
+      </div>
+      <div class="dot">
+        <img class="bus" src="bus.png" alt="bus-img">
+      </div>
+      <div class='date'>6.05am</div>
+    </li>
+    <li class='event up'>
+      <div class='content'>
+        <div class="avatar">Erikkarai</div>
+      </div>
+      <div class="dot">
+        <img class="bus" src="bus.png" alt="bus-img">
+      </div>
+      <div class='date'>6.30am</div>
+    </li>
+    <li class='event up'>
+      <div class='content'>
+        <div class="avatar">College</div>
+      </div>
+      <div class="dot">
+        <img class="bus" src="bus.png" alt="bus-img">
+      </div>
+      <div class="date">7.30am</div>
+    </li>
+  </ul>
+</body>
+</html>
